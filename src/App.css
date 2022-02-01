@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("https://images.unsplash.com/photo-1543536448-1e76fc2795bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=839&q=80");
+	background-repeat: no-repeat;
+    background-size: cover; 
+	font-family: "Roboto", sans-serif;
+}
+
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	right: 0;
+	z-index: 1000;
+	background-color:#22254b;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	
+	
+	
+}
+.bar{
+	display: flex !important;
+	list-style: none !important;
+	padding-left: 40px;
+}
+.navbarul {
+		display: flex;
+		justify-content: center;
+		padding-left: 0;
+		margin-top: 15px;
+		list-style: none !important;
+		
+
+	}
+	  a {
+		text-decoration: none !important;
+		list-style: none !important;
+		color: #fff !important;
+		padding-left:60px;
+		font-family: Montserrat,sans-serif;
+		font-size: 15px;
+		font-weight: 600 !important;
+
+	}
+	
+.btn-primary {
+    color: #fff;
+	font-family: Montserrat,sans-serif;
+	font-weight: 800 !important;
+    background-color: #22254b !important;
+    border:none !important;
+	width: 150px;
+	height: 50px;
+}
+.control{
+	background-color: transparent;
+	border:2px solid, #22254b;
+	border-radius: 50px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.2rem;
+	padding: 0.5rem 1.5rem;
+}
+form {
+	padding-right: 20px;
+}
+i{
+	float: left;
+	color: rgb(128, 4, 211);
+	font-size: xx-large;
+}
+.test{
+	display: flex;
+
+	
+}
+.mov {
+color:rgb(245, 22, 189);
+font-family: Montserrat,sans-serif;
+font-size: 26px;
+font-weight: 800;
+margin-left: 10px;
+}
+.flexx{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+
+.hero-container {
+	margin: auto;
+	display: flex;
+	float: left;
+}
+
+.main-container {
+
+	width: 270px;
+	height: 540px;
+	position: relative;
+	
+}
+
+.poster-container {
+	width: 230px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 999;
+}
+
+.poster {
+	width: 100%;
+	height: 350px;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	
+}
+
+.ticket-container {
+	background: #fff;
+	width: 270px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	opacity: 0;
+}
+
+.main-container:hover .ticket-container {
+	opacity: 1;
+	animation: bounceIn 0.6s linear;
+}
+.deletee {
+	background-color: crimson;
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	border:none;
+	border-radius: 4px;
+	margin-bottom: 10px;
+
+}
+.movieDetails{
+	background-color: rgb(98, 1, 255) ;
+	color: #fff;
+	
+	border:none;
+	border-radius: 4px;
+	padding-left: 0px !important;
+	margin-left: 10px;
+	
+}
+
+@keyframes bounceIn {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	20% {
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.01, 1.01, 1.01);
+		transform: scale3d(1.01, 1.01, 1.01);
+	}
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+}
+
+/* @keyframes bounce {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+.ticket__content {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+.ticket__movie-title {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.ticket__movie-slogan {
+	color: #999;
+	font-size: 0.9rem;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
